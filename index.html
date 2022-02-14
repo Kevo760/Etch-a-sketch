@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Etch A Sketch Project</title>
+</head>
+<body>
+
+    <h1>Etch a Sketch</h1>
+
+    <div class="box-body">
+
+        <div class="controls">
+
+            <input type="radio" name="select" id="option-black" value="black" checked>
+            <input type="radio" name="select" id="option-rainbow" value="random">
+            <input type="radio" name="select" id="option-eraser" value="white">
+              <label for="option-black" class="option option-black">
+                 <span>Black</span>
+                 </label>
+
+              <label for="option-rainbow" class="option option-rainbow">
+                 <span>Rainbow</span>
+              </label>
+
+              <label for="option-eraser" class="option option-eraser">
+                <span>Eraser</span>
+             </label>
+            
+            <button class="clear">Clear</button>
+            <p class="select-size">Select Size:</p>
+            <input type="range" min="1" max="64" value="16" id="slider" onchange="changeSize(this.value)">
+            <p><span class="slider-text"></span>x<span class="slider-text-2"></span></p>
+        </div>
+
+        <div class="container">
+        </div>
+
+    </div>
+    
+</body>
+<script src="./app.js"></script>
+</html>
